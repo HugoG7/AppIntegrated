@@ -12,7 +12,7 @@ public class Usuarios {
 	private String id;
 	private String usuario;
 	private String password;
-	private PersonalDatos personalDatos;
+	private PersonalDatos personal_datos;
 	private String email;
 	private Puesto puesto;
 	private boolean activo;
@@ -21,10 +21,10 @@ public class Usuarios {
 		
 	}
 	
-	public Usuarios(String usuario, String password, PersonalDatos personalDatos, String email, Puesto puesto, boolean activo){
+	public Usuarios(String usuario, String password, PersonalDatos personal_datos, String email, Puesto puesto, boolean activo){
 		this.usuario = usuario;
 		this.password = password;
-		this.personalDatos = personalDatos;
+		this.personal_datos = personal_datos;
 		this.email = email;
 		this.puesto = puesto;
 		this.activo = activo;
@@ -54,12 +54,12 @@ public class Usuarios {
 		this.password = password;
 	}
 
-	public PersonalDatos getPersonalDatos() {
-		return personalDatos;
+	public PersonalDatos getPersonal_datos() {
+		return personal_datos;
 	}
 
-	public void setPersonalDatos(PersonalDatos personalDatos) {
-		this.personalDatos = personalDatos;
+	public void setPersonal_datos(PersonalDatos personal_datos) {
+		this.personal_datos = personal_datos;
 	}
 
 	public String getEmail() {
@@ -89,7 +89,7 @@ public class Usuarios {
 	@Override
 	public String toString() {
 		return "Usuarios [id=" + id + ", usuario=" + usuario + ", password="
-				+ password + ", personalDatos=" + personalDatos + ", email="
+				+ password + ", personalDatos=" + personal_datos + ", email="
 				+ email + ", puesto=" + puesto + ", activo=" + activo + "]";
 	}
 }

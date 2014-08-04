@@ -5,6 +5,7 @@ import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
+import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
@@ -17,7 +18,9 @@ public class ServicePath {
 	@GET
 	@Path("/get")
 	@Produces(MediaType.APPLICATION_JSON)
-	public Usuarios getTrackInJson(Usuarios usuario){
+	public Usuarios getTrackInJson(@QueryParam("user") String user){
+		Usuarios usuario = new Usuarios();
+		usuario.setUsuario(user);
 		return ConsultaCtrl.getInstance().findUserby(usuario);
 	}
 	
