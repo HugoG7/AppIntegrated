@@ -31,9 +31,6 @@ public class Puesto {
 
 	@Override
 	public String toString() {
-		return "Puesto [nombre=" + nombre + ", activo=" + activo
-				+ ", getNombre()=" + getNombre() + ", isActivo()=" + isActivo()
-				+ ", getClass()=" + getClass() + ", hashCode()=" + hashCode()
-				+ ", toString()=" + super.toString() + "]";
+		return "Puesto [nombre=" + nombre + ", activo=" + activo + "]";
 	}
 }

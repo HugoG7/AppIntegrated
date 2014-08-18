@@ -24,11 +24,11 @@ public class ServicePath {
 		return ConsultaCtrl.getInstance().findUserby(usuario);
 	}
 	
-//	@POST
-//	@Path("/post")
-//	@Consumes(MediaType.APPLICATION_JSON)
-//	public Response createTrackInJson(Track track){
-//		String result = "Track Guardado: "+track;
-//		return Response.status(201).entity(result).build();
-//	}
+	@POST
+	@Path("/post")
+	@Consumes(MediaType.APPLICATION_JSON)
+	public Response createTrackInJson(Usuarios usuario){
+		String result = "Usuario Guardado: "+ usuario;
+		return Response.status(201).entity(result).build();
+	}
 }
